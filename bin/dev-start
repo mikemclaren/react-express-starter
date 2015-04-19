@@ -1,0 +1,1 @@
+NODE_ENV=development PORT=3000 ./node_modules/.bin/supervisor ./server/server.js & ./node_modules/.bin/webpack-dev-server --port 8000 --hot

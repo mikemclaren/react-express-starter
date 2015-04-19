@@ -1,0 +1,16 @@
+{
+  "name": "react-starter",
+  "version": "1.0.0",
+  "homepage": "https://github.com/sq1agency/react-starter",
+  "authors": [
+    "Mike Mclaren <mike.mclaren@sq1.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

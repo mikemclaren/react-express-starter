@@ -1,0 +1,42 @@
+{
+	"env": {
+		"browser": true,
+		"jquery": true,
+		"amd": true,
+		"node": true
+	},
+
+	"ecmaFeatures": {
+		"jsx": true
+	},
+
+	"rules": {
+		"comma-dangle": 1,
+		"no-reserved-keys": 2,
+		"default-case": 1,
+		"guard-for-in": 2,
+		"no-else-return": 1,
+		"no-self-compare": 1,
+		"no-throw-literal": 1,
+		"wrap-iife": 2,
+		"no-catch-shadow": 2,
+		"indent": [2, "tab"],
+		"quotes": [2, "single"],
+		"consistent-this": [1, "_this"],
+		"func-names": 1,
+		"no-inline-comments": 2,
+		"max-nested-callbacks": [2, 3],
+		"new-cap": 2,
+		"new-parens": 2,
+		"no-array-constructor": 2,
+		"no-multiple-empty-lines": 2,
+		"no-nested-ternary": 2,
+		"one-var": 2,
+		"operator-assignment": [2, "always"],
+		"quotes": [2, "single", "avoid-escape"],
+		"space-in-brackets": [1, "always", {
+			"propertyName": false
+		}],
+		"spaced-line-comment": [1, "always"]
+	}
+}

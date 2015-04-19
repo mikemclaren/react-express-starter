@@ -1,0 +1,38 @@
+{
+  "name": "react-starter",
+  "version": "1.0.0",
+  "description": "This starter is focused on frontend React applications.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mike Mclaren <mike.mclaren@sq1.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "css-loader": "^0.10.1",
+    "extract-text-webpack-plugin": "^0.5.0",
+    "file-loader": "^0.8.1",
+    "html-loader": "^0.2.3",
+    "json-loader": "^0.5.1",
+    "jsx-loader": "^0.13.1",
+    "less": "^2.5.0",
+    "less-loader": "^2.2.0",
+    "load-grunt-tasks": "^3.1.0",
+    "node-sass": "^2.1.1",
+    "react": "^0.13.1",
+    "react-hot-loader": "^1.2.5",
+    "react-router": "^0.13.2",
+    "sass-loader": "^0.6.0",
+    "style-loader": "^0.10.2",
+    "supervisor": "^0.6.0",
+    "url-loader": "^0.5.5",
+    "webpack": "^1.8.4",
+    "webpack-dev-server": "^1.8.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.12.3",
+    "compression": "^1.4.3",
+    "express": "^4.12.3",
+    "react": "^0.13.1"
+  }
+}
