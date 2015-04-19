@@ -1,7 +1,7 @@
 {
-  "name": "react-starter",
+  "name": "react-express-starter",
   "version": "1.0.0",
-  "description": "This starter is focused on frontend React applications.",
+  "description": "This starter is focused on frontend React applications that require additional backend support.",
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
