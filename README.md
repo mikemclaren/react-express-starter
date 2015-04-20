@@ -18,6 +18,18 @@ __Note:__ Build process target files overwrite dev process files for ease of use
 ./bin/build
 ```
 
+## Important Files
+|File|What's Important About It?
+|------|------|
+|`app/components`|Where you should place the React components.|
+|`app/sass/main.scss`|The main Sass file, where you should put your Sass imports.|
+|`app/routes.jsx`|Where the react-router routes reside. You should add your routes here.|
+|`server/html.js`|Where the main HTML source sent at the end of each request resides.|
+|`server/server.js`|Where the express server resides.|
+
+## Passing Data From Server to Client
+Currently, the data you want passed to the server on express request should be passed in the `req.initialData` variable in your routes. Make sure to use the `next()` function in your routes if you want to render the React client.
+
 ## Features
 - HTML5 (obviously)
 - Support for IE9+
