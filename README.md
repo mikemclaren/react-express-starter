@@ -6,6 +6,8 @@ Feel free to open a pull-request if you have an idea or improvement!
 To view an example, check out the `examples` branch!
 
 ## Usage
+__Note:__ You should use this starter kit with the [starter-kit](https://www.npmjs.com/package/starter-kit) utility.
+
 ```
 ./bin/bootstrap
 ./bin/dev-start
