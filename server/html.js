@@ -11,7 +11,13 @@ module.exports = function htmlLoader(req, res) {
 	res.write('<title>React Starter - Example</title>');
 	res.write('<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">');
 	res.write('<meta name="viewport" content="user-scalable=no width=device-width, initial-scale=1.0 maximum-scale=1.0">');
-	res.write('<link rel="stylesheet" href="/public/styles.css" type="text/css" />');
+
+	if(process.env.NODE_ENV === 'production') {
+		res.write('<link rel="stylesheet" href="/public/styles.css" type="text/css" />');
+	} else {
+		res.write('<link rel="stylesheet" href="http://127.0.0.1:8000/public/styles.css" type="text/css" />');
+	}
+
 	res.write('<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>');
 	res.write('</head>');
 	res.write('<body>');

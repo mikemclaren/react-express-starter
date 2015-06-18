@@ -5,6 +5,6 @@ var React = require('react'),
 
 module.exports = (
 	<Route handler={AppWrapper}>
-		<Route path="/" component={ToDoList} />
+		<Route name="/" path="/" handler={ToDoList} />
 	</Route>
 );
