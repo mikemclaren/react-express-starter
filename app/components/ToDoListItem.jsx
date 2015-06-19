@@ -7,10 +7,10 @@ ToDoListItem = React.createClass(
   {
     render: function render() {
       return (
-        <div>
+        <li>
           {this.props.item}
 					<ToDoListRemoveItem index={this.props.index} />
-        </div>
+        </li>
       );
     }
   }

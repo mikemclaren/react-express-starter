@@ -13,9 +13,9 @@ ToDoListicle = React.createClass(
       });
 
       return (
-        <div>
+        <ul>
           {rows}
-        </div>
+        </ul>
       );
     }
   }
