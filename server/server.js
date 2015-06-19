@@ -34,19 +34,20 @@ if(process.env.NODE_ENV === 'production') {
 	);
 }
 
-server.use(function index(req, res, next) {
-	req.initialData = list;
-	next();
-});
-
 server.post('/item', function addItem(req, res) {
 	list.push(req.body.item);
 	res.send(201);
 });
 
-server.delete('/item/:id', function finishItem(req, res) {
+server.del('/item/:id', function finishItem(req, res) {
+	console.log(req.params);
 	list.splice(req.params.id, 1);
 	res.send(200);
+});
+
+server.use(function index(req, res, next) {
+	req.initialData = list;
+	next();
 });
 
 server.use(html);

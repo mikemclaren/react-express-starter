@@ -8,42 +8,45 @@ request = require('superagent');
 ToDoList = React.createClass(
   {
     getInitialState: function getInitialState() {
+      var list = document.getElementById('initial-data').innerHTML;
+      list = JSON.parse(list);
+
       return {
-        list: []
+        list: list
       };
     },
 
     addItem: function addItem(data) {
       var list = this.state.list,
-          self = this;
+          _this = this;
+
       request
         .post('/item')
+        .type('form')
         .send({ item: data.detail })
         .end(function response(err, res) {
           if(res.ok) {
             list.push(data.detail);
-            self.setState({ list: list });
+            _this.setState({ list: list });
           }
         });
     },
 
     removeItem: function removeItem(data) {
       var list = this.state.list,
-          self = this;
+          _this = this;
+
       request
-        .del('/item' + data.detail)
+        .del('/item/' + data.detail)
         .end(function response(err, res) {
           if(res.ok) {
             list.splice(data.detail, 1);
-            self.setState({ list: list });
+            _this.setState({ list: list });
           }
         });
     },
 
     componentDidMount: function componentDidMount() {
-      var list = document.getElementById('initial-data').innerHTML;
-      list = JSON.parse(list);
-
       window.addEventListener('add_event', this.addItem);
       window.addEventListener('remove_item', this.removeItem);
     },
